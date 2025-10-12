@@ -1,3 +1,5 @@
+#![no_main]
+#![no_std]
 use uefi_raw::table::system::{ SystemTable };
 use uefi_raw::Handle;
 
