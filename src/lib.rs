@@ -1,11 +1,11 @@
 #![no_main]
-#![no_std]
+#![no_main]
 use uefi_raw::table::system::{ SystemTable };
 use uefi_raw::Handle;
 
 #[repr(C)]
 pub struct BootInfo {
-    img_handle: *mut Handle,
-    sys_table:  *mut SystemTable,
-    mm_ptr: *mut [u8],
+    pub image_handle: *mut Handle,
+    pub system_table:  *mut SystemTable,
+    pub mm_ptr: *mut [u8],
 }
