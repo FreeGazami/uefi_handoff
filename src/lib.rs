@@ -6,7 +6,7 @@ use uefi_raw::Handle;
 
 #[repr(C)]
 pub struct BootInfo {
-    pub image_handle: *mut Handle,
-    pub system_table:  *mut SystemTable,
+    pub image_handle: *mut u8,
+    pub system_table:  *mut u8,
     pub mm_ptr: *mut [u8],
 }
