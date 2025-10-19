@@ -3,12 +3,9 @@
 
 use core::ffi::c_void;
 
-use uefi_raw::table::system::{ SystemTable };
-use uefi_raw::Handle;
-
 #[repr(C)]
 pub struct BootInfo {
     pub image_handle: *mut c_void,
-    pub system_table:  *mut c_void,
-    pub mm_ptr: *mut [u8],
+    pub runtime_services: *mut c_void,
+    pub mm_ptr: *mut c_void,
 }
