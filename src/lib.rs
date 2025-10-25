@@ -9,5 +9,5 @@ pub struct BootInfo {
     pub runtime_services: *mut c_void,
     pub mm: *mut c_void,
     pub mm_len: usize,
-    pub configuration_table: *mut c_void,
+    pub acpi_table: *mut c_void,
 }
