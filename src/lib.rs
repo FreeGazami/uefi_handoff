@@ -2,6 +2,7 @@
 #![no_std]
 
 use core::ffi::c_void;
+use uefi_raw::protocol::console::GraphicsOutputModeInformation;
 
 #[repr(C)]
 pub struct BootInfo {
