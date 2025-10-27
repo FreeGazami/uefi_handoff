@@ -12,5 +12,5 @@ pub struct BootInfo {
     pub acpi_table: *mut c_void,
     pub frame_buffer_base: u64,
     pub frame_buffer_size: usize,
-    pub info: mut GraphicsOutputModeInformation,
+    pub info: GraphicsOutputModeInformation,
 }
